@@ -51,3 +51,7 @@
         <p class="text-center">No hay ponentes aún</p>
     <?php endif; ?>
 </div>
+
+<?php 
+    echo $paginacion;
+?>
