@@ -15,10 +15,6 @@ class Ponente extends ActiveRecord {
     public $imagen;
     public $tags;
     public $redes;
-
-    public $password_actual;
-    public $password_nuevo;
-
     
     public function __construct($args = [])
     {
