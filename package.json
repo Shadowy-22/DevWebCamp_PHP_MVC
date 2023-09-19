@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^6.8.1",
     "cssnano": "^5.1.10",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
@@ -26,6 +27,11 @@
     "gulp-terser-js": "^5.2.2",
     "gulp-webp": "^4.0.1",
     "sass": "^1.41.1",
+    "style-loader": "^3.3.3",
     "terser": "^5.14.2"
+  },
+  "dependencies": {
+    "swiper": "^10.2.0",
+    "webpack-stream": "^7.0.0"
   }
 }

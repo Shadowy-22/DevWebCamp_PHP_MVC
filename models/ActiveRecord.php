@@ -1,5 +1,8 @@
 <?php
 namespace Model;
+
+use stdClass;
+
 class ActiveRecord {
 
     // Base DE DATOS
@@ -138,6 +141,13 @@ class ActiveRecord {
         return array_shift( $resultado ) ;
     }
 
+    // Retornar los registros por un orden
+    public static function ordenar($columna, $orden){
+        $query = "SELECT * FROM " . static::$tabla . " ORDER BY $columna $orden";
+        $resultado = self::consultarSQL($query);
+        return $resultado;
+    }
+
     // Busqueda Where con Múltiples opciones
     public static function whereArray($array = []) {
         $query = "SELECT * FROM " . static::$tabla . " WHERE ";
@@ -153,8 +163,12 @@ class ActiveRecord {
     }
 
     // Traer un total de registros
-    public static function total() {
+    public static function total($columna = '', $valor = '') {
         $query = "SELECT COUNT(*) FROM " . static::$tabla;
+
+        if($columna) {
+            $query .= " WHERE $columna = $valor";
+        }
         $resultado = self::$db->query($query);
         $total = $resultado->fetch_array();
 
@@ -210,5 +224,23 @@ class ActiveRecord {
         $query = "DELETE FROM "  . static::$tabla . " WHERE id = " . self::$db->escape_string($this->id) . " LIMIT 1";
         $resultado = self::$db->query($query);
         return $resultado;
+    }
+
+
+    /** 
+     * Devuelve un objeto estándar con las propiedades de 
+     * este objeto. 
+     * Al ser un objeto estándar se le pueden añadir 
+     * nuevas propiedades dinamicamente sin problema 
+    */
+    public function getStdClass(): stdClass {
+        $object = new stdClass;
+     
+        foreach (static::$columnasDB as $column) {
+            if(property_exists($this, $column)){
+                $object->$column = $this->$column;
+            }
+        }
+        return $object;
     }
 }

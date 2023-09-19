@@ -2,17 +2,32 @@
     const horas = document.querySelector('#horas');
 
     if(horas) {
-
-        let busqueda = {
-            categoria_id: '',
-            dia: ''
-        }
-
         const categoria = document.querySelector('[name="categoria_id"]');
         const dias = document.querySelectorAll('[name="dia"]');
         const inputHiddenDia = document.querySelector('[name="dia_id"]');
         const inputHiddenHora = document.querySelector('[name="hora_id"]');
         
+        let busqueda = {
+            categoria_id: +categoria.value || '',
+            dia: +inputHiddenDia.value || ''
+        }
+
+        if(!Object.values(busqueda).includes('')){     
+            (async () => {
+                await buscarEventos();
+
+                const id = inputHiddenHora.value;
+                
+                // Resaltar la hora actual
+                const horaSeleccionada = document.querySelector(`[data-hora-id="${id}"]`);
+            
+                horaSeleccionada.classList.remove('horas__hora--deshabilitada');
+                horaSeleccionada.classList.add('horas__hora--seleccionada');
+
+                horaSeleccionada.onclick = seleccionarHora; 
+            })();
+        }
+
         categoria.addEventListener('change', terminoBusqueda);
         dias.forEach(dia => dia.addEventListener('change', terminoBusqueda));
 
@@ -53,12 +68,11 @@
             // Comprobar eventos ya tomados y quitar la clase de deshabilitado
             const horasTomadas = eventos.map( evento => evento.hora_id);
 
-            // Convertir el NodeList a Array e iterar
+            // Convertir el NodeList a Array
             const listadoHorasArray = Array.from(listadoHoras);
 
             // Filtrar arreglo y obtener uno nuevo con las horas disponibles
             const resultado = listadoHorasArray.filter( li => !horasTomadas.includes(li.dataset.horaId) );
-            console.log(resultado);
 
             // Quitarle la clase de deshabilitado
             resultado.forEach(li => {
