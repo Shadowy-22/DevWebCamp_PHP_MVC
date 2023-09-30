@@ -22,7 +22,7 @@
             <p class="header__texto">Octubre 6-7 2023</p>
             <p class="header__texto header__texto--modalidad">En Linea - Presencial</p>
 
-            <a href="/registro" class="header__boton">Comprar Pase</a>
+            <a href="<?php echo is_auth() ? '/finalizar-registro' : '/registro' ?>" class="header__boton">Comprar Pase</a>
         </div>
     </div>
 </header>
