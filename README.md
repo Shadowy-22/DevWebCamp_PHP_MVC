@@ -23,6 +23,7 @@ We include an overview of the Event where we showcase the Conferences and Worksh
 
 ### Purchasing a Ticket
 To acquire a ticket, users must first create an account on the platform.
+
 ![image](https://github.com/Shadowy-22/DevWebCamp_PHP_MVC/assets/119075581/4c7a87cf-0f36-4d56-b9e3-f963be5fa10a)
 Once logged in, follow these steps to secure your ticket:
 1. **Choose Ticket Type:**
