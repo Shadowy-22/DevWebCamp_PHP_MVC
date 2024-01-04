@@ -10,6 +10,7 @@ content, with attendee registration streamlined through PayPal payments.
 ## Sections
 ### Main Page
 We include an overview of the Event where we showcase the Conferences and Workshops, the Speakers and the location where the event will take place.
+
 ![image](https://github.com/Shadowy-22/DevWebCamp_PHP_MVC/assets/119075581/195279c4-f14b-4611-92a4-5f508df54062)
 
 ![image](https://github.com/Shadowy-22/DevWebCamp_PHP_MVC/assets/119075581/ffb64aaf-e933-47b3-9e32-e2153f4833e3)
