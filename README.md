@@ -21,10 +21,12 @@ We include an overview of the Event where we showcase the Conferences and Worksh
 
 ![image](https://github.com/Shadowy-22/DevWebCamp_PHP_MVC/assets/119075581/b9e78745-586c-4f15-90ab-395277b137ce)
 
+
 ### Purchasing a Ticket
 To acquire a ticket, users must first create an account on the platform.
 
 ![image](https://github.com/Shadowy-22/DevWebCamp_PHP_MVC/assets/119075581/4c7a87cf-0f36-4d56-b9e3-f963be5fa10a)
+
 Once logged in, follow these steps to secure your ticket:
 1. **Choose Ticket Type:**
    Select your preferred ticket type:
@@ -33,12 +35,14 @@ Once logged in, follow these steps to secure your ticket:
 
 ![image](https://github.com/Shadowy-22/DevWebCamp_PHP_MVC/assets/119075581/f9ca1897-75a4-4be2-beb1-1392e289d91f)
 
+
 2. **Logging in**
 The user will have to log in to its Paypal account (if it haven't already) to continue with the checkout process.
 
 ![image](https://github.com/Shadowy-22/DevWebCamp_PHP_MVC/assets/119075581/91d77b9b-44cb-4445-b882-e120f1074daa)
 
 ![image](https://github.com/Shadowy-22/DevWebCamp_PHP_MVC/assets/119075581/ad34aedf-f32d-43d3-825c-37ad3e1906b6)
+
 
 **THE NEXT STEP IT'S ONLY FOR THE PRESENTIAL TICKET**
 
