@@ -1,4 +1,4 @@
-# DevWebCamp_PHP_MVC
+# DevWebCamp
 
 ## Summary
 DevWebCamp is a full-stack project that leverages the MVC architecture, PHP, SASS, Active Record,
