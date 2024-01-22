@@ -11,7 +11,7 @@ content, with attendee registration streamlined through PayPal payments.
 ### Main Page
 Explore a comprehensive overview of the event on our Main Page, featuring highlights of conferences and workshops, introductions to speakers, and details about the event location and pricing.
 
-![image](https://github.com/Shadowy-22/DevWebCamp_PHP_MVC/assets/119075581/195279c4-f14b-4611-92a4-5f508df54062)
+![image](https://github.com/Shadowy-22/DevWebCamp_PHP_MVC/assets/119075581/421ae492-39e9-4a63-a642-c90af31b79ec)
 
 ![image](https://github.com/Shadowy-22/DevWebCamp_PHP_MVC/assets/119075581/ffb64aaf-e933-47b3-9e32-e2153f4833e3)
 
