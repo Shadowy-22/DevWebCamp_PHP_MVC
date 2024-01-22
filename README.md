@@ -39,7 +39,7 @@ Once logged in, follow these steps to secure your ticket:
 2. **Logging in**
 The user will have to log in to its Paypal account (if it haven't already) to continue with the checkout process.
 
-![image](https://github.com/Shadowy-22/DevWebCamp_PHP_MVC/assets/119075581/91d77b9b-44cb-4445-b882-e120f1074daa)
+![image](https://github.com/Shadowy-22/DevWebCamp_PHP_MVC/assets/119075581/03f39ee8-234e-45d8-8f9c-fea344e44c2f)
 
 ![image](https://github.com/Shadowy-22/DevWebCamp_PHP_MVC/assets/119075581/ad34aedf-f32d-43d3-825c-37ad3e1906b6)
 
@@ -72,7 +72,8 @@ They also have the ability to Create, Read, Edit, and Delete information pertain
 
 ![image](https://github.com/Shadowy-22/DevWebCamp_PHP_MVC/assets/119075581/b0206d01-7203-4a1b-84ef-6ea3052b7608)
 
-![image](https://github.com/Shadowy-22/DevWebCamp_PHP_MVC/assets/119075581/797a4ac4-9bf2-428d-b7fe-da33c8318295)
+![image](https://github.com/Shadowy-22/DevWebCamp_PHP_MVC/assets/119075581/e68fdf49-d30d-4373-96af-01afb181fef1)
+
 
 ## Contributing
 
